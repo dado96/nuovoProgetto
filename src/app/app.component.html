@@ -1,0 +1,27 @@
+<mat-toolbar color="primary" >
+
+  <a mat-button routerLink="/" class="button">
+    <div style="display: flex; align-items: center; margin-left: 15px;">
+      <fa-icon [icon]="['fab', 'angular']" size="2xl" ></fa-icon>
+      <span style="margin-left: 10px;">Home</span>
+    </div>
+  </a>
+
+  <a mat-button routerLink="/" class="button">
+    <mat-icon>search</mat-icon>
+    <span>Search</span>
+  </a>
+
+  <a href="https://github.com/dado96/progetto-angular" target="_blank" mat-button class="gitButton" >
+    <div class="testoGitHub">
+      <fa-icon [icon]="['fab', 'github']" size="2xl"></fa-icon>
+      <span style="margin-left: 10px;">
+        <a>GitHub</a>
+      </span>
+    </div>
+  </a>
+</mat-toolbar>
+
+<app-paziente></app-paziente>
+
+<router-outlet></router-outlet>

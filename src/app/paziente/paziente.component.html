@@ -1,0 +1,57 @@
+<div class="component">  
+    <div class='menu-container1'>
+         <h2 style="color: black;">Anagrafica Paziente</h2>
+        
+          <div style="display:flex; flex-direction: row;">
+            <p>
+              <mat-form-field appearance="outline" class="form" >
+                <mat-label style="color: black;">Codice Fiscale</mat-label>
+                <input matInput placeholder="Codice Fiscale" type="text" id="codiceFiscale" name="codiceFiscale" [(ngModel)]="fiscalCode" required minlength="16" maxlength="16">
+                <mat-icon matSuffix>keyboard</mat-icon>
+              </mat-form-field>
+            </p> 
+
+            <p>
+              <mat-form-field appearance="outline" style="margin-left: 20px;" class="form" >
+                <mat-label style="color: black;">Nome</mat-label>
+                <input matInput placeholder="nome" type="text" id="namePaziente" name="namePaziente" [(ngModel)]="nome" required minlength="4" maxlength="11">
+                <mat-icon matSuffix>person</mat-icon>
+              </mat-form-field>
+            </p> 
+
+            <p>
+              <mat-form-field appearance="outline" style="margin-left: 20px;" class="form">
+                <mat-label style="color: black;">Cognome</mat-label>
+                <input matInput placeholder="Cognome" type="text" id="cognomePaziente" name="cognomePaziente" [(ngModel)]="cognome" required>
+                <mat-icon matSuffix>person</mat-icon>
+              </mat-form-field>
+          </p> 
+        </div>
+
+        <div style="margin-top: 3%;  display:flex; flex-direction: row;">
+          <p>
+            <mat-form-field appearance="outline" class="form">
+              <mat-label style="color: black;">eta</mat-label>
+              <input matInput placeholder="eta" type="number" id="etaUser" name="etaUser" [(ngModel)]="eta" required>
+              <mat-icon matSuffix>pin</mat-icon>
+            </mat-form-field>
+          </p>
+          
+          <p>
+            <mat-form-field appearance="outline" class="form" style="margin-left: 20px;">
+              <mat-label style="color: black;">Comune</mat-label>
+              <input matInput placeholder="Comune" type="text" id="comune" name="comune" [(ngModel)]="comune" required>
+              <mat-icon matSuffix>location_city</mat-icon>
+
+            </mat-form-field>
+          </p>
+
+
+
+        </div>
+          
+
+          
+
+          
+     </div>
