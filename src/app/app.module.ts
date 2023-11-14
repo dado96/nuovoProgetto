@@ -17,6 +17,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { faGithub, faAngular } from '@fortawesome/free-brands-svg-icons';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatList, MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { faGithub, faAngular } from '@fortawesome/free-brands-svg-icons';
     MatIconModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
