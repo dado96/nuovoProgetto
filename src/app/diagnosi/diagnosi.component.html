@@ -1,1 +1,27 @@
-<p>diagnosi works!</p>
+<div class="component">  
+    <div class='menu-container1'>
+         <h2 style="color: black;">Diagnosi</h2>
+
+         <mat-divider></mat-divider>
+        
+          <div style= " margin-top: 2%; display:flex; flex-direction: row;">
+            <p>
+                <mat-form-field appearance="fill" style="display: flex;">
+                    <mat-label>Diagnosi</mat-label>
+                    <textarea  matInput placeholder="il aziente ecc..." 
+                    type="text" id="esamiPaziente" name="esamiPaziente" [(ngModel)]="diagnositxt" required
+                    cdkTextareaAutosize
+                    cdkAutosizeMinRows="4"
+                    cdkAutosizeMaxRows="18"
+                    ></textarea>
+                <mat-icon matSuffix>keyboard</mat-icon>
+            </mat-form-field>
+            </p>
+
+        </div>
+          
+
+          
+
+          
+     </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EsameModels } from '../modelli/esame/esame.models';
 
 @Component({
   selector: 'app-esame',
@@ -9,4 +10,7 @@ export class EsameComponent
 {
   CFPaziente= "";
   Esamitxt= "";
+
+esame: EsameModels[]=[];
+
 }

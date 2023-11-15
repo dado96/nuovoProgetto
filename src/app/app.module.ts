@@ -15,10 +15,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { faGithub, faAngular } from '@fortawesome/free-brands-svg-icons';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatList, MatListModule} from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -44,7 +44,8 @@ import {MatList, MatListModule} from '@angular/material/list';
     FormsModule,
     ReactiveFormsModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    FormControl
   ],
   providers: [],
   bootstrap: [AppComponent]

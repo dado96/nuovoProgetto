@@ -1,1 +1,24 @@
-<p>dottore works!</p>
+<div class="component">  
+    <div class='menu-container1'>
+         <h2 style="color: black;">Dottori</h2>
+
+         <mat-divider></mat-divider>
+          
+         <div style=" margin-top: 2%; display:flex; flex-direction: row;">
+
+            <mat-form-field>
+                <mat-label>Toppings</mat-label>
+                <mat-select [formControl]="toppings" multiple>
+                  @for (topping of toppingList; track topping) {
+                    <mat-option [value]="topping">{{topping}}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+
+        </div>
+          
+
+          
+
+          
+     </div>
